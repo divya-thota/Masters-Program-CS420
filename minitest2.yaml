@@ -1,0 +1,235 @@
+ex1:
+  start_state: q0
+  accepted_states: [q3]
+  edges:
+    - src: q0
+      char: b
+      dst: q1
+    - src: q0
+      char: a
+      dst: q4
+    - src: q1
+      char: b
+      dst: q2
+    - src: q1
+      char: a
+      dst: q4
+    - src: q2
+      char: a
+      dst: q3
+    - src: q2
+      char: b
+      dst: q4
+    - src: q3
+      char: a
+      dst: q3
+    - src: q3
+      char: b
+      dst: q3
+    - src: q4
+      char: a
+      dst: q4
+    - src: q4
+      char: b
+      dst: q4  
+
+ex2:
+  start_state: q0
+  accepted_states: [q3]
+  edges:
+    - src: q0
+      char: a
+      dst: q0
+    - src: q0
+      char: b
+      dst: q1
+    - src: q1
+      char: a
+      dst: q2
+    - src: q1
+      char: b 
+      dst: q1
+    - src: q2
+      char: a
+      dst: q3
+    - src: q2
+      char: b
+      dst: q1
+    - src: q3
+      char: a
+      dst: q3
+    - src: q3
+      char: b
+      dst: q1
+
+ex3:
+  start_state: q0
+  accepted_states: [q0]
+  edges:
+    - src: q0
+      char: a
+      dst: q1
+    - src: q0
+      char: b
+      dst: q1
+    - src: q1
+      char: a
+      dst: q2
+    - src: q1
+      char: b
+      dst: q2
+    - src: q2
+      char: a
+      dst: q0
+    - src: q2
+      char: b
+      dst: q0
+      
+ex4:
+  start_state: q0
+  accepted_states: [q0,q1,q2,q3,q4,q5,q6,q7,q8,q9]
+  edges:
+    - src: q0
+      char: null
+      dst: q9
+    - src: q0
+      char: a
+      dst: q1
+    - src : q0
+      char: b
+      dst: q5
+    - src: q1
+      char: a
+      dst: q2
+    - src: q2
+      char: a
+      dst: q3
+    - src: q3
+      char: a
+      dst: q4
+    - src: q5
+      char: a
+      dst: q2
+    - src: q5
+      char: b
+      dst: q6
+    - src: q6
+      char: a
+      dst: q3
+    - src: q6
+      char: b
+      dst: q7
+    - src: q7
+      char: a
+      dst: q4
+    - src: q7
+      char: b
+      dst: q8
+
+ex5:
+  start_state: 'q0'
+  accepted_states: ['q5']
+  edges:
+  - src: 'q0'
+    char: null
+    dst: 'q1'
+  - src: 'q1'
+    char: b
+    dst: 'q2'
+  - src: 'q1'
+    char: a
+    dst: 'q2'
+  - src: 'q2'
+    char: a
+    dst: 'q3'
+  - src: 'q3'
+    char: b
+    dst: 'q4'
+  - src: 'q4'
+    char: a
+    dst: 'q5'
+  - src: 'q5'
+    char: b
+    dst: 'q5'
+  - src: 'q5'
+    char: a
+    dst: 'q5'
+  - src: 'q0'
+    char: null
+    dst: 'q6'
+  - src: 'q6'
+    char: b
+    dst: 'q7'
+  - src: 'q6'
+    char: a
+    dst: 'q7'
+  - src: 'q7'
+    char: a
+    dst: 'q8'
+  - src: 'q8'
+    dst: 'q8'
+    char: b
+  - src: 'q8'
+    char: a
+    dst: 'q8'
+  - src: 'q8'
+    char: a
+    dst: 'q3'
+
+ex6:
+  start_state: q0
+  accepted_states: [q0,q2,q3,q4]
+  edges:
+    - src : q0
+      char: null
+      dst: q4
+    - src : q0
+      char: a
+      dst: q1
+    - src : q0
+      char: b
+      dst: q2
+    - src : q1
+      char: b
+      dst: q3
+    - src : q3
+      char: a
+      dst: q1
+
+ex7:
+ start_state: q0
+ accepted_states: [q0,q3]
+ edges:
+  - src: q0
+    char: null
+    dst: q0
+  - src: q0
+    char: a
+    dst: q1
+  - src: q0
+    char: b
+    dst: q1
+  - src: q1
+    char: a
+    dst: q2
+  - src: q1
+    char: b
+    dst: q2
+  - src: q2
+    char: a
+    dst: q3
+  - src: q2
+    char: b
+    dst: q3
+  - src: q3
+    char: a
+    dst: q3
+  - src: q3
+    char: b
+    dst: q3
+    
+
+Student
+Divya Thota
+Autograder Score
+100.0 / 100.0
