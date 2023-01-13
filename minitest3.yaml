@@ -1,0 +1,210 @@
+ex1:
+    start_state: "q0"
+    accepted_states: [q12]
+    edges:
+      - src: q0
+        dst: q1
+        push: $
+      - src: q1
+        dst: q1
+        char: a
+        push: a
+      - src: q1
+        dst: q2
+        push: a
+      - src: q2
+        dst: q3
+        pop: a
+      - src: q3
+        dst: q3
+        char: b
+        push: b
+      - src: q3
+        dst: q4
+        push: a
+      - src: q4
+        dst: q5
+        pop: a
+      - src: q5
+        dst: q6
+        pop: b
+        char: c 
+      - src: q6
+        dst: q7
+        push: a
+      - src: q7
+        dst: q5
+        pop: a
+      - src: q5
+        dst: q8
+        push: a
+      - src: q8
+        dst: q9
+        pop: a
+      - src: q9
+        dst: q10
+        pop: a
+        char: c
+      - src: q10
+        dst: q11
+        push: a
+      - src: q11
+        dst: q9
+        pop: a
+      - src: q9
+        dst: q12
+        pop: $
+
+ex2:
+    start_state: "q1"
+    accepted_states: [q4]
+    edges:
+      - src: q1
+        dst: q2
+        push: $
+      - src: q2
+        dst: q3
+        push: S
+      - src: q3
+        dst: q3
+        pop: a
+        char: a
+      - src: q3
+        dst: q3
+        pop: b
+        char: b
+      - src: q3
+        dst: q9
+        pop: X
+      - src: q9
+        dst: q3
+        push: a
+      - src: q3
+        dst: q10
+        pop: X
+      - src: q10
+        dst: q3
+        push: b     
+      - src: q3
+        dst: q3
+        pop: T
+      - src: q3
+        dst: q12
+        pop: T
+      - src: q12
+        dst: q5
+        push: S 
+      - src: q5
+        dst: q6
+        push: T
+      - src: q6
+        dst: q3
+        push: X
+      - src: q3
+        dst: q13
+        pop: S
+      - src: q13
+        dst: q7
+        push: b
+      - src: q7
+        dst: q8
+        push: X
+      - src: q8
+        dst: q11
+        push: T
+      - src: q11
+        dst: q3
+        push: a                        
+      - src: q3
+        dst: q4
+        pop: $
+
+
+ex3:
+  start_state: q0
+  accepted_states: [q8]
+  edges:
+    - src: q0
+      dst: q1
+      push: $
+    - src: q1
+      dst: q1
+      char: a
+      push: a
+    - src: q1
+      dst: q5
+      push: a
+    - src: q5
+      dst: q2
+      pop: a
+    - src: q2
+      dst: q2
+      char: b
+      pop: a
+    - src: q3
+      dst: q3
+      char: b
+      push: b
+    - src: q2
+      dst: q6
+      push: a
+    - src: q6
+      dst: q3
+      pop: a
+    - src: q3
+      dst: q7
+      push: b
+    - src: q7
+      dst: q4
+      pop: b
+    - src: q4
+      dst: q4
+      char: c
+      pop: b
+    - src: q4
+      dst: q8
+      pop: $
+
+ex4:
+  start_state: q0
+  accepted_states: [q6]
+  edges:
+    - src: q0
+      dst: q1
+      push: $
+    - src: q1
+      dst: q1
+      char: a
+      push: a
+    - src: q1
+      dst: q1
+      char: b
+      push: b
+    - src: q1
+      dst: q2
+      push: c
+    - src: q2
+      dst: q3
+      pop: c
+    - src: q3
+      dst: q3
+      char: c
+      pop: a
+    - src: q3
+      dst: q4
+      char: c
+      pop: b
+    - src: q4
+      dst: q5
+      char: c
+      push: c
+    - src: q5
+      dst: q3
+      pop: c
+    - src: q3
+      dst: q6
+      pop: $
+Student
+Divya Thota
+Autograder Score
+100.0 / 100.0
